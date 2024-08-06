@@ -12,7 +12,7 @@ const db = mysql.createConnection({
     user: 'avnadmin',
     database: 'defaultdb',
     port: '12394',
- 
+ password: 'AVNS_cutfv794yVtT3BNeUUj'
 })
 app.get('/sample',(req,res)=>{
     res.json({"sql connected":"hello"});
@@ -25,7 +25,7 @@ app.post('/api/contacts', async (req, res) => {
         user: 'avnadmin',
         database: 'defaultdb',
         port: '12394',
-        
+        password: 'AVNS_cutfv794yVtT3BNeUUj'
       });
   
       const { name, email, phone } = req.body;
@@ -58,7 +58,7 @@ app.get('/api/contacts', async (req, res) => {
         user: 'avnadmin',
         database: 'defaultdb',
         port: '12394',
-       
+       password: 'AVNS_cutfv794yVtT3BNeUUj'
       });
   
       const [results] = await connection.query("SELECT * FROM `Contact Management`");
@@ -78,7 +78,7 @@ app.get('/api/contacts', async (req, res) => {
         user: 'avnadmin',
         database: 'defaultdb',
         port: '12394',
-   
+   password: 'AVNS_cutfv794yVtT3BNeUUj'
       });
   
       const { query } = req.query;
